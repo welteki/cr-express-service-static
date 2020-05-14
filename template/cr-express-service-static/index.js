@@ -13,7 +13,7 @@ async function init() {
     app.use(bodyParser.text({ type : "text/*" }));
     app.disable('x-powered-by');
     
-    app.use('/', express.static("function/public"), function (req, res) {
+    app.use('/', express.static("public"), function (req, res) {
         res.send(JSON.stringify(req.body))
     })
 
