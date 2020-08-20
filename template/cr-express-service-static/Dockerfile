@@ -25,8 +25,8 @@ COPY index.js ./
 
 WORKDIR /home/app/public
 
-# COPY function files and folders
-COPY function/ ./
+# COPY static files and folders
+COPY function/static ./
 
 # Set correct permissions to use non root user
 WORKDIR /home/app/
